@@ -5,15 +5,17 @@ import App from './components/App';
 import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
+import Blog from './components/Blog';
 import Page404 from './components/Page404';
 
 const AppRoutes =()=>
     <App>
         <Switch>
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/" component={Home} />
-            <Route component={Page404} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/" component={Home} />
+            <Route exact component={Page404} />
         </Switch>
     </App>
 

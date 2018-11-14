@@ -5,7 +5,7 @@ export default[
     },
     {
         'title':'Blog',
-        'url':''
+        'url':'/blog'
     },
     {
         'title':'About',

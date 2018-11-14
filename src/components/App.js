@@ -9,11 +9,11 @@ class App extends Component {
 
 
   render() {
-    const children = this.props;
+    const {children} = this.props;
     return (
       <div className="App">
        <Header title ="Memorias" items = {items}/>
-       <Content body ={children}/>
+       <Content body={children}/>
        <Footer copy="Copyright - All Rights Reserved"/>
       </div>
     );  
